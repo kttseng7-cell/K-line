@@ -410,6 +410,13 @@ button {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.guide-note {
+  margin: 0;
+  max-width: 26ch;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
 .concept-card,
 .step-card,
 .compare-card {
@@ -432,6 +439,86 @@ button {
   margin: 0;
   color: var(--ink-soft);
   line-height: 1.75;
+}
+
+.visual-guide-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 18px;
+}
+
+.visual-card {
+  display: grid;
+  gap: 18px;
+  align-items: center;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.9fr);
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.visual-card-svg {
+  min-height: 220px;
+  border-radius: 20px;
+  padding: 16px;
+  background:
+    linear-gradient(180deg, rgba(31, 29, 26, 0.96), rgba(21, 23, 28, 0.92)),
+    #14161b;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.visual-card-svg svg,
+.pattern-visual svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.visual-copy h3 {
+  margin: 0 0 10px;
+}
+
+.visual-copy p {
+  margin: 0;
+  color: var(--ink-soft);
+  line-height: 1.8;
+}
+
+.mini-legend {
+  display: grid;
+  gap: 14px;
+  align-content: center;
+}
+
+.mini-legend div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  border-radius: 16px;
+  background: rgba(255, 250, 241, 0.84);
+  border: 1px solid var(--line);
+  color: var(--ink-soft);
+}
+
+.legend-swatch {
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+.legend-swatch.bullish {
+  background: var(--green);
+}
+
+.legend-swatch.bearish {
+  background: var(--red);
+}
+
+.legend-swatch.neutral {
+  background: var(--neutral);
 }
 
 .filter-group {
@@ -482,6 +569,10 @@ button {
   display: none;
 }
 
+.pattern-card h3 {
+  font-size: 1.28rem;
+}
+
 .pattern-badge {
   display: inline-flex;
   align-items: center;
@@ -510,6 +601,23 @@ button {
 
 .pattern-summary {
   margin-bottom: 14px;
+}
+
+.pattern-visual {
+  min-height: 210px;
+  margin: 14px 0 16px;
+  border-radius: 20px;
+  padding: 14px;
+  background:
+    linear-gradient(180deg, rgba(31, 29, 26, 0.96), rgba(21, 23, 28, 0.92)),
+    #14161b;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 12px 22px rgba(16, 20, 28, 0.12);
+}
+
+.pattern-visual text {
+  font-family: "Noto Sans TC", sans-serif;
 }
 
 .pattern-points {
@@ -608,6 +716,8 @@ button {
 
 @media (max-width: 1100px) {
   .hero-grid,
+  .visual-guide-grid,
+  .visual-card,
   .pattern-grid,
   .steps,
   .compare-grid,
@@ -660,6 +770,11 @@ button {
   .candles {
     gap: 6px;
     min-height: 220px;
+  }
+
+  .pattern-visual,
+  .visual-card-svg {
+    min-height: 180px;
   }
 
   .candle {

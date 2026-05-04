@@ -107,6 +107,36 @@
           </div>
         </section>
 
+        <section class="section visual-guide">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow">Visual Guide</p>
+              <h2>先用圖看懂一根 K 線</h2>
+            </div>
+            <p class="guide-note">先理解開盤、收盤、上下影線，再看型態會快很多。</p>
+          </div>
+          <div class="visual-guide-grid">
+            <article class="visual-card">
+              <div class="visual-card-svg" id="candle-anatomy"></div>
+              <div class="visual-copy">
+                <h3>一根 K 線的構造</h3>
+                <p>紅 K 代表收盤高於開盤，綠 K 代表收盤低於開盤。影線越長，表示盤中曾被激烈拉扯。</p>
+              </div>
+            </article>
+            <article class="visual-card">
+              <div class="mini-legend">
+                <div><span class="legend-swatch bullish"></span>買方回攻</div>
+                <div><span class="legend-swatch bearish"></span>賣方壓制</div>
+                <div><span class="legend-swatch neutral"></span>多空猶豫</div>
+              </div>
+              <div class="visual-copy">
+                <h3>怎麼看圖最快</h3>
+                <p>先看出現在高檔還是低檔，再看哪一根是主角，最後觀察有沒有吞噬、缺口或連續推進。</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
         <section class="section patterns-section" id="patterns">
           <div class="section-heading split">
             <div>
@@ -122,9 +152,10 @@
           </div>
 
           <div class="pattern-grid">
-            <article class="pattern-card" data-category="single">
+            <article class="pattern-card" data-category="single" data-pattern="hammer">
               <div class="pattern-badge bullish">反轉偏多</div>
               <h3>鎚頭線 Hammer</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">下跌趨勢末端常見，短實體搭配長下影線。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>下影線至少為實體 2 倍，上影線短或幾乎沒有。</li>
@@ -133,9 +164,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="single">
+            <article class="pattern-card" data-category="single" data-pattern="hanging-man">
               <div class="pattern-badge caution">高檔轉弱</div>
               <h3>上吊線 Hanging Man</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">外型像鎚頭線，但出現在上漲末端時意義不同。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>短實體、長下影線，位置在波段高檔更關鍵。</li>
@@ -144,9 +176,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="single">
+            <article class="pattern-card" data-category="single" data-pattern="shooting-star">
               <div class="pattern-badge caution">高檔反轉</div>
               <h3>流星線 Shooting Star</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">短實體搭配長上影線，常被視為上攻失敗訊號。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>上影線長、實體靠近低點區，下影線短。</li>
@@ -155,9 +188,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="single">
+            <article class="pattern-card" data-category="single" data-pattern="doji">
               <div class="pattern-badge neutral">觀望訊號</div>
               <h3>十字線 Doji</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">開盤與收盤接近，顯示市場短暫失去方向。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>實體極短，影線可長可短。</li>
@@ -166,9 +200,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="pair">
+            <article class="pattern-card" data-category="pair" data-pattern="bullish-engulfing">
               <div class="pattern-badge bullish">反轉偏多</div>
               <h3>看漲吞噬 Bullish Engulfing</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">第二根紅 K 完整包住前一根黑 K 實體。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>先黑後紅，第二根實體明顯較大。</li>
@@ -177,9 +212,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="pair">
+            <article class="pattern-card" data-category="pair" data-pattern="bearish-engulfing">
               <div class="pattern-badge caution">反轉偏空</div>
               <h3>看跌吞噬 Bearish Engulfing</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">第二根黑 K 吞沒前一根紅 K，常見於高檔轉弱。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>先紅後黑，第二根實體把前一根完全包住。</li>
@@ -188,9 +224,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="pair">
+            <article class="pattern-card" data-category="pair" data-pattern="harami">
               <div class="pattern-badge neutral">整理訊號</div>
               <h3>孕線 Harami</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">第二根 K 線完全包在前一根較大實體內部。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>前大後小，第二根像被包進前一根身體裡。</li>
@@ -199,9 +236,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="pair">
+            <article class="pattern-card" data-category="pair" data-pattern="piercing">
               <div class="pattern-badge neutral">支撐觀察</div>
               <h3>刺透線 Piercing Pattern</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">第二根紅 K 深入前一根黑 K 實體超過一半。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>前黑後紅，紅 K 收盤站回前黑 K 實體中段以上。</li>
@@ -210,9 +248,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="triple">
+            <article class="pattern-card" data-category="triple" data-pattern="morning-star">
               <div class="pattern-badge bullish">經典反轉</div>
               <h3>晨星 Morning Star</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">黑 K、小實體、紅 K 的三段結構，是常見止跌組合。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>第一根長黑，第二根小實體，第三根長紅收回前段跌幅。</li>
@@ -221,9 +260,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="triple">
+            <article class="pattern-card" data-category="triple" data-pattern="evening-star">
               <div class="pattern-badge caution">經典反轉</div>
               <h3>暮星 Evening Star</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">紅 K、小實體、黑 K 的三段轉折，常見於高檔。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>第一根長紅，第二根小實體，第三根長黑吞回前面漲幅。</li>
@@ -232,9 +272,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="triple">
+            <article class="pattern-card" data-category="triple" data-pattern="three-white-soldiers">
               <div class="pattern-badge bullish">續強觀察</div>
               <h3>紅三兵 Three White Soldiers</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">連續三根穩健紅 K，表示多方推進有節奏。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>三根紅 K 逐步墊高，收盤價持續上移。</li>
@@ -243,9 +284,10 @@
               </ul>
             </article>
 
-            <article class="pattern-card" data-category="triple">
+            <article class="pattern-card" data-category="triple" data-pattern="three-black-crows">
               <div class="pattern-badge caution">轉弱觀察</div>
               <h3>黑三鴉 Three Black Crows</h3>
+              <div class="pattern-visual" aria-hidden="true"></div>
               <p class="pattern-summary">連續三根黑 K 下壓，通常反映空方接管盤面。</p>
               <ul class="pattern-points">
                 <li><strong>形態特徵：</strong>三根黑 K 依序走低，收盤價不斷下移。</li>
