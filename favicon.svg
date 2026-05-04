@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="K 線學習圖示">
+  <rect width="64" height="64" rx="18" fill="#191816" />
+  <path d="M20 14v36" stroke="#f6f0e5" stroke-width="3" stroke-linecap="round" />
+  <rect x="14" y="22" width="12" height="18" rx="4" fill="#cc503e" />
+  <path d="M44 10v44" stroke="#f6f0e5" stroke-width="3" stroke-linecap="round" />
+  <rect x="38" y="18" width="12" height="24" rx="4" fill="#1c8f61" />
+</svg>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>K 線型態學習站</title>
+    <meta
+      name="description"
+      content="用清楚的圖像邏輯與市場心理，學會常見 K 線型態的判讀方式。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Noto+Serif+TC:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="topbar">
+          <a class="brand" href="#top">K 線學習</a>
+          <div class="nav-links">
+            <a href="#patterns">型態總覽</a>
+            <a href="#guide">判讀流程</a>
+            <a href="#faq">常見迷思</a>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <section class="hero-copy">
+            <p class="eyebrow">Candlestick Pattern Guide</p>
+            <h1>看懂 K 線，不只記名字，更要讀懂多空心理。</h1>
+            <p class="hero-text">
+              這個頁面整理常見單根、雙根與三根 K 線型態，幫你從
+              <strong>形狀</strong>、<strong>市場情緒</strong>、
+              <strong>確認訊號</strong> 三個角度快速判讀。
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#patterns">開始學習型態</a>
+              <a class="button secondary" href="#guide">先看判讀流程</a>
+            </div>
+            <ul class="hero-stats">
+              <li>
+                <strong>10+</strong>
+                <span>常見型態</span>
+              </li>
+              <li>
+                <strong>3 大類</strong>
+                <span>反轉、續行、觀望</span>
+              </li>
+              <li>
+                <strong>4 步驟</strong>
+                <span>建立判讀習慣</span>
+              </li>
+            </ul>
+          </section>
+
+          <aside class="hero-chart" aria-label="K 線示意圖">
+            <div class="chart-card">
+              <div class="chart-header">
+                <span>市場節奏</span>
+                <span class="pill">教學版</span>
+              </div>
+              <div class="candles">
+                <div class="candle red tall"><span></span></div>
+                <div class="candle red"><span></span></div>
+                <div class="candle doji"><span></span></div>
+                <div class="candle green long"><span></span></div>
+                <div class="candle green"><span></span></div>
+                <div class="candle red short"><span></span></div>
+                <div class="candle green tall"><span></span></div>
+              </div>
+              <div class="signal-panel">
+                <div>
+                  <small>目前重點</small>
+                  <strong>別只看單根</strong>
+                </div>
+                <p>型態一定要放在趨勢、成交量與支撐壓力位置中一起看。</p>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </header>
+
+      <main>
+        <section class="section intro">
+          <div class="section-heading">
+            <p class="eyebrow">核心觀念</p>
+            <h2>K 線是價格與情緒的縮影</h2>
+          </div>
+          <div class="concept-grid">
+            <article class="concept-card">
+              <h3>實體</h3>
+              <p>開盤價與收盤價之間的區間，反映當日多空誰更有主導權。</p>
+            </article>
+            <article class="concept-card">
+              <h3>上影線</h3>
+              <p>代表價格一度上衝，但最後未能完全守住高點，透露上方壓力。</p>
+            </article>
+            <article class="concept-card">
+              <h3>下影線</h3>
+              <p>代表價格曾被打低後拉回，常反映下方承接或恐慌後的反彈。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section patterns-section" id="patterns">
+          <div class="section-heading split">
+            <div>
+              <p class="eyebrow">Pattern Library</p>
+              <h2>常見 K 線型態總覽</h2>
+            </div>
+            <div class="filter-group" aria-label="型態分類">
+              <button class="filter-button is-active" data-filter="all">全部</button>
+              <button class="filter-button" data-filter="single">單根型態</button>
+              <button class="filter-button" data-filter="pair">雙根型態</button>
+              <button class="filter-button" data-filter="triple">三根型態</button>
+            </div>
+          </div>
+
+          <div class="pattern-grid">
+            <article class="pattern-card" data-category="single">
+              <div class="pattern-badge bullish">反轉偏多</div>
+              <h3>鎚頭線 Hammer</h3>
+              <p class="pattern-summary">下跌趨勢末端常見，短實體搭配長下影線。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>下影線至少為實體 2 倍，上影線短或幾乎沒有。</li>
+                <li><strong>市場心理：</strong>空方盤中打壓，但低檔買盤把價格拉回。</li>
+                <li><strong>確認方式：</strong>隔日若再收紅，訊號會比單獨出現更可靠。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="single">
+              <div class="pattern-badge caution">高檔轉弱</div>
+              <h3>上吊線 Hanging Man</h3>
+              <p class="pattern-summary">外型像鎚頭線，但出現在上漲末端時意義不同。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>短實體、長下影線，位置在波段高檔更關鍵。</li>
+                <li><strong>市場心理：</strong>多方雖然收回跌幅，但盤中已暴露賣壓。</li>
+                <li><strong>確認方式：</strong>下一根若跌破實體低點，轉弱訊號更明確。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="single">
+              <div class="pattern-badge caution">高檔反轉</div>
+              <h3>流星線 Shooting Star</h3>
+              <p class="pattern-summary">短實體搭配長上影線，常被視為上攻失敗訊號。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>上影線長、實體靠近低點區，下影線短。</li>
+                <li><strong>市場心理：</strong>買方一度推高，但賣壓把價格打回。</li>
+                <li><strong>確認方式：</strong>若伴隨爆量或跌破支撐，反轉力道更強。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="single">
+              <div class="pattern-badge neutral">觀望訊號</div>
+              <h3>十字線 Doji</h3>
+              <p class="pattern-summary">開盤與收盤接近，顯示市場短暫失去方向。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>實體極短，影線可長可短。</li>
+                <li><strong>市場心理：</strong>多空拉鋸激烈，但最終誰都沒有明顯勝出。</li>
+                <li><strong>確認方式：</strong>若出現在趨勢末端，常是轉折前的警訊。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="pair">
+              <div class="pattern-badge bullish">反轉偏多</div>
+              <h3>看漲吞噬 Bullish Engulfing</h3>
+              <p class="pattern-summary">第二根紅 K 完整包住前一根黑 K 實體。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>先黑後紅，第二根實體明顯較大。</li>
+                <li><strong>市場心理：</strong>買方重新奪回主導權，顯示低檔反攻。</li>
+                <li><strong>確認方式：</strong>若發生在支撐區且成交量放大，成功率更高。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="pair">
+              <div class="pattern-badge caution">反轉偏空</div>
+              <h3>看跌吞噬 Bearish Engulfing</h3>
+              <p class="pattern-summary">第二根黑 K 吞沒前一根紅 K，常見於高檔轉弱。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>先紅後黑，第二根實體把前一根完全包住。</li>
+                <li><strong>市場心理：</strong>買盤失守，賣方在高位主導出場。</li>
+                <li><strong>確認方式：</strong>搭配跌破均線或前低，訊號可信度提升。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="pair">
+              <div class="pattern-badge neutral">整理訊號</div>
+              <h3>孕線 Harami</h3>
+              <p class="pattern-summary">第二根 K 線完全包在前一根較大實體內部。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>前大後小，第二根像被包進前一根身體裡。</li>
+                <li><strong>市場心理：</strong>原本的趨勢動能開始放緩，市場轉入猶豫。</li>
+                <li><strong>確認方式：</strong>需要第三根突破方向來決定是反轉還是續行。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="pair">
+              <div class="pattern-badge neutral">支撐觀察</div>
+              <h3>刺透線 Piercing Pattern</h3>
+              <p class="pattern-summary">第二根紅 K 深入前一根黑 K 實體超過一半。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>前黑後紅，紅 K 收盤站回前黑 K 實體中段以上。</li>
+                <li><strong>市場心理：</strong>空方原本延續跌勢，但買盤強勢回補。</li>
+                <li><strong>確認方式：</strong>若隔日再續強，通常代表低檔買氣不弱。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="triple">
+              <div class="pattern-badge bullish">經典反轉</div>
+              <h3>晨星 Morning Star</h3>
+              <p class="pattern-summary">黑 K、小實體、紅 K 的三段結構，是常見止跌組合。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>第一根長黑，第二根小實體，第三根長紅收回前段跌幅。</li>
+                <li><strong>市場心理：</strong>空方力竭後，多方開始接手並扭轉氣氛。</li>
+                <li><strong>確認方式：</strong>第三根越強、回收越深，反轉訊號越漂亮。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="triple">
+              <div class="pattern-badge caution">經典反轉</div>
+              <h3>暮星 Evening Star</h3>
+              <p class="pattern-summary">紅 K、小實體、黑 K 的三段轉折，常見於高檔。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>第一根長紅，第二根小實體，第三根長黑吞回前面漲幅。</li>
+                <li><strong>市場心理：</strong>市場從樂觀轉為猶豫，最後由賣方主導。</li>
+                <li><strong>確認方式：</strong>若第三根跌破前波支撐，警訊更強烈。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="triple">
+              <div class="pattern-badge bullish">續強觀察</div>
+              <h3>紅三兵 Three White Soldiers</h3>
+              <p class="pattern-summary">連續三根穩健紅 K，表示多方推進有節奏。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>三根紅 K 逐步墊高，收盤價持續上移。</li>
+                <li><strong>市場心理：</strong>買方有計畫地接手，市場信心快速恢復。</li>
+                <li><strong>確認方式：</strong>若發生在整理突破初期，續漲機率常較高。</li>
+              </ul>
+            </article>
+
+            <article class="pattern-card" data-category="triple">
+              <div class="pattern-badge caution">轉弱觀察</div>
+              <h3>黑三鴉 Three Black Crows</h3>
+              <p class="pattern-summary">連續三根黑 K 下壓，通常反映空方接管盤面。</p>
+              <ul class="pattern-points">
+                <li><strong>形態特徵：</strong>三根黑 K 依序走低，收盤價不斷下移。</li>
+                <li><strong>市場心理：</strong>賣壓連續釋放，市場情緒從樂觀轉恐慌。</li>
+                <li><strong>確認方式：</strong>若出現在高檔爆量區，要特別留意趨勢反轉。</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section guide-section" id="guide">
+          <div class="section-heading">
+            <p class="eyebrow">Reading Process</p>
+            <h2>判讀 K 線型態的 4 個步驟</h2>
+          </div>
+          <div class="steps">
+            <article class="step-card">
+              <span class="step-number">01</span>
+              <h3>先看位置</h3>
+              <p>同一個型態出現在低檔、高檔、盤整區，意義可能完全不同。</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">02</span>
+              <h3>再看前後趨勢</h3>
+              <p>反轉型態必須建立在「前面真的有趨勢」的前提上才有解讀價值。</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">03</span>
+              <h3>搭配量能</h3>
+              <p>沒有量能支持的型態，常常只是短暫波動，不一定能形成延續走勢。</p>
+            </article>
+            <article class="step-card">
+              <span class="step-number">04</span>
+              <h3>等待確認</h3>
+              <p>不要只靠單根 K 線進場，最好等突破、跌破或隔日續強續弱再判斷。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section compare-section">
+          <div class="section-heading">
+            <p class="eyebrow">Quick Compare</p>
+            <h2>容易混淆的型態差異</h2>
+          </div>
+          <div class="compare-grid">
+            <article class="compare-card">
+              <h3>鎚頭線 vs 上吊線</h3>
+              <p>外型相似，但一個出現在低檔偏多，一個出現在高檔偏空，關鍵在位置。</p>
+            </article>
+            <article class="compare-card">
+              <h3>十字線 vs 孕線</h3>
+              <p>十字線偏向單根猶豫，孕線則是原趨勢力道縮小，常需第三根確認。</p>
+            </article>
+            <article class="compare-card">
+              <h3>吞噬型態 vs 晨暮星</h3>
+              <p>吞噬是雙根直接翻盤，晨暮星則是三段式轉折，心理節奏更完整。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section faq-section" id="faq">
+          <div class="section-heading">
+            <p class="eyebrow">FAQ</p>
+            <h2>新手最常見的三個迷思</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>只要看到反轉型態，就一定可以立刻進場嗎？</summary>
+              <p>不建議。型態只是提醒你「可能轉折」，真正的交易決策還要看位置、量能與後續確認。</p>
+            </details>
+            <details class="faq-item">
+              <summary>單一型態的勝率高嗎？</summary>
+              <p>單獨使用通常不夠高，因此多數交易者會搭配支撐壓力、均線、趨勢線與成交量一起判讀。</p>
+            </details>
+            <details class="faq-item">
+              <summary>是不是學越多型態越好？</summary>
+              <p>不一定。先熟悉少數高頻型態，建立一致的判讀流程，通常比背大量名稱更有效。</p>
+            </details>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <button class="back-to-top" type="button" aria-label="回到頂部">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>
